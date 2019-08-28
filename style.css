@@ -1,0 +1,49 @@
+body {
+    background-color: #f7f8fa;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.centralized {
+    text-align: center;
+}
+
+.image {
+    border: 2px solid black;
+    border-radius: 49%;
+    border-style: double;
+}
+
+header {
+    background-color: rgb(46, 44, 44);
+    color: white;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+.photo {
+    background-color: aquamarine;
+    margin-top: -20px;
+    padding-top: 15px;
+}
+
+.headertext {
+    font-size: 25px;
+}
+
+footer {
+    background-color: rgb(46, 44, 44);
+    padding: 2px;
+    color: white;
+}
+
+.date {
+    color: green;
+}
+
+.name {
+    padding-bottom: 15px;
+}
