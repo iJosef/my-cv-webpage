@@ -7,6 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> My First Page</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript">
+        function validate() {
+            var x = document.forms["contact"]["fullname"].value;
+            var y = document.forms["contact"]["message"].value;
+
+            if (x.length >= 4 && y.length >= 20) {
+                return true;
+            } else {
+                alert("make sure the input is at least 4 characters long for name, and at least 20 characters long for message.");
+                return false;
+            }
+
+        }
+    </script>
 </head>
 
 <body>
@@ -204,7 +218,20 @@
             </tr>
         </table>
 
-
+        <div class="centralized">
+            <fieldset>
+                <legend>
+                    <h3><mark>GET IN TOUCH WITH ME</mark></h3>
+                </legend>
+                <form method="POST" id="contact" action="#" onsubmit="return validate()">
+                    <p><input type="text" name="fullname" class="field" placeholder="Full Name (Min. 4 chars)" id="name" required/>
+                        <input type="email" name="email" class="field" placeholder="Email Address" id="email" required/></p>
+                    <p><input type="text" name="subject" class="field" placeholder="Subject" id="subject" required/></p>
+                    <p><textarea placeholder="Message (Min. 20 chars)" id="message" name="message" required></textarea></p>
+                    <p><input type="submit" name="submit" value="Send Message" id="" /></p>
+                </form>
+            </fieldset>
+        </div>
 
         <!--This happens to be the end of my cv.. for more information, check the div that contains the contact information-->
     </section>
@@ -212,6 +239,7 @@
     <footer>
         <p align="center">&copy; Copyright Joseph Emeruwa</p>
     </footer>
+
 </body>
 
 </html>
