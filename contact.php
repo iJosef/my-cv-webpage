@@ -27,7 +27,7 @@
             fwrite($handle, "\n\n");
             fclose($handle);
             echo '<script language="javascript" type="text/javascript"> alert("Message Received Successfully!. I will get back to you as soon as possible.");</script>';
-            echo '<script language="javascript" type="text/javascript"> window.location="joseph.html";</script>';
+            echo '<script language="javascript" type="text/javascript"> window.location="index.html";</script>';
         
             exit;
         }
